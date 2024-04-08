@@ -1,5 +1,4 @@
-*/
-
+<!--
 Código original gerado pelo copilot no modo 'mais balanceado'.
 O prompt inserido foi:
 
@@ -8,35 +7,37 @@ numero, tipo, nome, marca, cor, modelo, numero, status, situação e observaçã
 Os campos tipo, status situação são do tipo select. 
 O campo observação é do tipo textarea
 
-*/
+-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Cadastro de Mobiliário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Formulário de Cadastro</h1>
+        <h1 class="align-center">Cadastro de Mobiliário</h1>
         <form action="#" method="post">
-            <label for="numero">Número:</label>
-            <input type="text" id="numero" name="numero" required>
+            <label for="numero">Nro Patrimônio:</label>
+            <input type="text" id="nroPatrimonio" name="nroPatrimonio" required>
 
             <label for="tipo">Tipo:</label>
             <select id="tipo" name="tipo">
-                <option value="1">Opção 1</option>
-                <option value="2">Opção 2</option>
-                <!-- Adicione mais opções conforme necessário -->
+                <option value="1">SIPAC/IFRS</option>
+                <option value="2">UFRGS</option>
+                <option value="2">UFRGS</option>
+                <option value="2">ULTRA</option>
+                <option value="2">OUTRO</option>
             </select>
 
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
             <label for="marca">Marca:</label>
-            <input type="text" id="marca" name="marca" required>
+            <input type="text" id="marca" name="marca">
 
             <label for="cor">Cor:</label>
             <input type="text" id="cor" name="cor" required>
@@ -44,18 +45,21 @@ O campo observação é do tipo textarea
             <label for="modelo">Modelo:</label>
             <input type="text" id="modelo" name="modelo" required>
 
+            <label for="modelo">Nro de Serie:</label>
+            <input type="text" id="nroDeSerie" name="nroDeSerie">
+            
             <label for="status">Status:</label>
             <select id="status" name="status">
                 <option value="ativo">Ativo</option>
-                <option value="inativo">Inativo</option>
-                <!-- Adicione mais opções conforme necessário -->
+                <option value="inativo">Pendente</option>
+        
             </select>
 
             <label for="situacao">Situação:</label>
             <select id="situacao" name="situacao">
-                <option value="pendente">Pendente</option>
-                <option value="concluido">Concluído</option>
-                <!-- Adicione mais opções conforme necessário -->
+                <option value="pendente">Em Uso</option>
+                <option value="concluido">Inservível</option>
+               
             </select>
 
             <label for="observacao">Observação:</label>
